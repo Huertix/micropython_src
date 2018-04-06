@@ -1,0 +1,13 @@
+import machine
+import time
+
+
+pin = machine.Pin(2, machine.Pin.OUT)
+
+value = True
+
+while True:
+    value = not value
+    pin.value(value)
+    time.sleep(1)
+
